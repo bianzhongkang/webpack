@@ -1,0 +1,148 @@
+{
+  "name": "general-frame",
+  "version": "1.0.0",
+  "private": "true",
+  "repository": "https://gitee.com/Tutu1993/general-frame.git",
+  "author": "TutuMa <625706468@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack",
+    "serve": "serve build -l 8080",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "axios": "^0.21.0",
+    "lodash": "^4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@babel/runtime-corejs3": "^7.12.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/case-sensitive-paths-webpack-plugin": "^2.1.4",
+    "@types/copy-webpack-plugin": "^6.3.0",
+    "@types/lodash": "^4.14.165",
+    "@types/mini-css-extract-plugin": "^1.2.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dev-utils": "^9.0.4",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.12",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/terser-webpack-plugin": "^5.0.2",
+    "@types/webpack-bundle-analyzer": "^3.9.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "eslint-webpack-plugin": "^2.4.1",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "jest-circus": "^26.6.3",
+    "jest-watch-typeahead": "^0.6.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "postcss": "^8.2.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^4.1.0",
+    "postcss-normalize": "^9.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^2.2.1",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "react-app-polyfill": "^2.0.0",
+    "react-dev-utils": "^11.0.1",
+    "react-refresh": "^0.9.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "serve": "^11.3.2",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "terser-webpack-plugin": "^5.0.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "type-fest": "^0.20.2",
+    "typescript": "^4.1.3",
+    "webpack": "^5.11.0",
+    "webpack-bundle-analyzer": "^4.3.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^4.0.0-beta.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/no-var-requires": "off"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": false
+        }
+      ],
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
